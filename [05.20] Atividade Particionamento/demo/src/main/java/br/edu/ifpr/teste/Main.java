@@ -1,4 +1,4 @@
-package br.edu.ifpr.avaliacao;
+package br.edu.ifpr.teste;
 
 public class Main {
     public static void main(String[] args) {
