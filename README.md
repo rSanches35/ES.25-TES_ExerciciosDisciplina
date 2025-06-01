@@ -26,6 +26,33 @@ Requisitos Funcionais: O sistema deve validar senhas com as seguintes regras:
 
 ### 📂 [05.20] Atividade Particionamento — *Particionamento de Equivalência*
 
+### Exercício 1. Exibir Calendário
+
+**Contexto:**
+Aplicar a técnica de Particionamento de Equivalência para derivar casos de teste que verifiquem corretamente a funcionalidade Cal() para exibição de calendários no Linux. A atividade visa garantir que as três formas principais de chamada da função *getCalendario()* funcionem adequadamente:
+
+| Parâmetro(s) de Entrada               | Calendário Exibido                   |
+|---------------------------------------|--------------------------------------|
+| getCalendario()                       | Calendário do mês atual              |
+| getCalendario(String ano)             | Calendário completo do ano informado |
+| getCalendario(String mes, String ano) | Calendário do mês e ano informados   |
+
+> Exemplo: `getCalendario("2025", "janeiro")`
+
+**Janeiro de 2025**
+
+| Dom | Seg | Ter | Qua | Qui | Sex | Sab |
+|-----|-----|-----|-----|-----|-----|-----|
+|     |     |     |  1  |  2  |  3  |  4  |
+|  6  |  7  |  8  |  9  |  10 |  11 |  12 |
+|  13 |  14 |  15 |  16 |  17 |  18 |  19 |
+|  20 |  21 |  22 |  23 |  24 |  25 |  26 |
+|  27 |  28 |  29 |  30 |  31 |     |     |
+
+---
+
+### Exercício 2. Cálculo de IRPF
+
 **Contexto:**
 Aplicar a técnica de Particionamento de Equivalência para derivar casos de teste que verifiquem corretamente o cálculo do Imposto de Renda de Pessoa Física (IRPF) com base na tabela vigente em 2022. A atividade visa garantir que diferentes faixas salariais sejam corretamente tributadas de acordo com suas respectivas alíquotas e deduções.
 
@@ -42,6 +69,7 @@ Tabela de faixas (partições de equivalência):
 | Acima de 4.664,68            | 27,5%        | 869,36                  |
 
 ---
+
 
 
 
