@@ -96,7 +96,7 @@ public class TesteCalendario {
 
         //ENTÃO [VERIFICAR]
         assertThrows(IllegalArgumentException.class, () -> {
-            calendario.getCalendario("0");
+            calendario.getCalendario("10000");
         });
     }
 
@@ -114,7 +114,7 @@ public class TesteCalendario {
 
         //ENTÃO [VERIFICAR]
         assertThrows(IllegalArgumentException.class, () -> {
-            calendario.getCalendario("2025, Mês");
+            calendario.getCalendario("Mês", "2025");
         });
     }
 
@@ -130,7 +130,7 @@ public class TesteCalendario {
 
         //ENTÃO [VERIFICAR]
         assertThrows(IllegalArgumentException.class, () -> {
-            calendario.getCalendario("0, 2025");
+            calendario.getCalendario("0", "2025");
         });
     }
 
@@ -164,7 +164,7 @@ public class TesteCalendario {
 
         //ENTÃO [VERIFICAR]
         assertThrows(IllegalArgumentException.class, () -> {
-            calendario.getCalendario("13, 2025");
+            calendario.getCalendario("13", "2025");
         });
     }
 
